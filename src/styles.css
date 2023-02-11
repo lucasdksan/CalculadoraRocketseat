@@ -149,6 +149,8 @@ body {
 }
 
 .calculator-body {
+    display: flex;
+    flex-direction: column;
     width: 355px;
     height: 565px;
     border-radius: 50px;
@@ -198,10 +200,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.equalIcon {
-
 }
 
 .result {

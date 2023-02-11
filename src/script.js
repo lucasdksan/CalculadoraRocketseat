@@ -29,9 +29,14 @@ function calculationCal(key, Fvalue, Lvalue){
     if(`${Fvalue}`.includes(",")){
         var aux = `${Fvalue}`.replace(",",".");
         firstValue = parseFloat(aux);
-    } else if(`${Lvalue}`.includes(",")){
-        var aux = `${Lvalue}`.replace(",",".");
-        lastValue = parseFloat(aux);
+    }
+    
+    if(`${Lvalue}`.includes(",")){
+        var auxL = `${Lvalue}`.replace(",",".");
+
+        console.log("Aqui: ", auxL);
+
+        lastValue = parseFloat(auxL);
     }
 
     switch(key){
@@ -150,4 +155,8 @@ $("#por").on("click", function(){
     if(firstVal.length !== 0){
         $("span.result").text(result);
     }
+});
+
+$("#minplus");on("click", function(){
+    
 });
